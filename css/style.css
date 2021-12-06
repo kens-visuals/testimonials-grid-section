@@ -115,6 +115,7 @@ body {
   background-image: url("../images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: top left 20rem;
+  opacity: 0;
   animation: fade-in 1s 0.5s ease-in-out alternate forwards;
 }
 @media (min-width: 810px) {
@@ -131,11 +132,13 @@ body {
 }
 .testimonial__box--light-grey {
   background-color: #48556a;
+  opacity: 0;
   animation: fade-in 1s 1s ease-in-out alternate forwards;
 }
 .testimonial__box--white, .testimonial__box--white-long {
   background-color: white;
   box-shadow: 20px 40px 80px -30px rgba(25, 33, 46, 0.3);
+  opacity: 0;
   animation: fade-in 1s 2s ease-in-out alternate forwards;
 }
 .testimonial__box--white .testimonial__wrapper-name > *, .testimonial__box--white-long .testimonial__wrapper-name > *,
@@ -146,6 +149,7 @@ body {
   color: #19212e;
 }
 .testimonial__box--white-long {
+  opacity: 0;
   animation: fade-in 1s 1.5s ease-in-out alternate forwards;
 }
 @media (min-width: 1140px) {
@@ -156,6 +160,7 @@ body {
 }
 .testimonial__box--dark-grey {
   background-color: #19212e;
+  opacity: 0;
   animation: fade-in 1s 2.5s ease-in-out alternate forwards;
 }
 @media (min-width: 1140px) {
@@ -208,6 +213,15 @@ body {
 }
 .attribution__link:hover, .attribution__link:active {
   color: #19212e;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
