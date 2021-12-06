@@ -1,6 +1,80 @@
 @use './base' as *;
 
+.testimonial {
+  &__main {
+    margin: 7rem 0;
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__box {
+    border-radius: 1rem;
+    padding: 2.5rem 3.2rem;
+
+    &--violet {
+      background-color: $color-secondary;
+      background-image: url('../images/bg-pattern-quotation.svg');
+      background-repeat: no-repeat;
+      background-position: top left 20rem;
+    }
+
+    &--light-grey {
+      background-color: $color-secondary--light;
+    }
+
+    &--white {
+      & .testimonial__wrapper-name > *,
+      .testimonial__heading,
+      .testimonial__text {
+        color: $color-secondary--dark;
+      }
+
+      background-color: $color-primary;
+    }
+
+    &--dark-grey {
+      background-color: $color-secondary--dark;
+    }
+  }
+
+  &__img {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    border: 0.2rem solid rgba($color-primary--dark, 0.5);
+  }
+
+  &__name {
+    color: $color-primary;
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  &__status {
+    color: $color-primary;
+    font-size: 1.2rem;
+    line-height: 1;
+    opacity: 50%;
+  }
+
+  &__heading {
+    width: 98%;
+    color: $color-primary;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  &__text {
+    color: $color-primary;
+    font-size: 1.35rem;
+    font-weight: 500;
+    opacity: 70%;
+  }
+}
+
 .attribution {
+  color: $color-secondary--light;
   font-size: 1rem;
   text-align: center;
   margin-block: 1rem;
@@ -8,12 +82,12 @@
   &__link:link,
   &__link:visited {
     text-transform: uppercase;
-    // color: $color-primary--light;
+    color: $color-secondary;
     transition: all 0.3s;
   }
 
   &__link:hover,
   &__link:active {
-    // color: $color-secondary;
+    color: $color-secondary--dark;
   }
 }

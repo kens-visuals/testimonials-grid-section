@@ -1,0 +1,21 @@
+.testimonial {
+  &__container {
+    width: 87.5%;
+    max-width: 40rem;
+  }
+
+  &__wrapper {
+    &-info {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &-name {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+  }
+}
