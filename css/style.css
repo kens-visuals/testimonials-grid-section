@@ -104,12 +104,18 @@ body {
 .testimonial__box {
   border-radius: 1rem;
   padding: 2.5rem 3.2rem;
+  transition: all 0.3s;
+}
+.testimonial__box:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 20px 40px 50px -30px rgba(25, 33, 46, 0.3);
 }
 .testimonial__box--violet {
   background-color: #7541c8;
   background-image: url("../images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: top left 20rem;
+  animation: fade-in 1s 0.5s ease-in-out alternate forwards;
 }
 @media (min-width: 810px) {
   .testimonial__box--violet {
@@ -125,10 +131,12 @@ body {
 }
 .testimonial__box--light-grey {
   background-color: #48556a;
+  animation: fade-in 1s 1s ease-in-out alternate forwards;
 }
 .testimonial__box--white, .testimonial__box--white-long {
   background-color: white;
   box-shadow: 20px 40px 80px -30px rgba(25, 33, 46, 0.3);
+  animation: fade-in 1s 2s ease-in-out alternate forwards;
 }
 .testimonial__box--white .testimonial__wrapper-name > *, .testimonial__box--white-long .testimonial__wrapper-name > *,
 .testimonial__box--white .testimonial__heading,
@@ -136,6 +144,9 @@ body {
 .testimonial__box--white .testimonial__text,
 .testimonial__box--white-long .testimonial__text {
   color: #19212e;
+}
+.testimonial__box--white-long {
+  animation: fade-in 1s 1.5s ease-in-out alternate forwards;
 }
 @media (min-width: 1140px) {
   .testimonial__box--white-long {
@@ -145,6 +156,7 @@ body {
 }
 .testimonial__box--dark-grey {
   background-color: #19212e;
+  animation: fade-in 1s 2.5s ease-in-out alternate forwards;
 }
 @media (min-width: 1140px) {
   .testimonial__box--dark-grey {
