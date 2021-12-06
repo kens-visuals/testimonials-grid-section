@@ -1,12 +1,18 @@
 .testimonial {
   &__container {
     width: 87.5%;
-    max-width: 40rem;
+    max-width: 115rem;
+
+    @media (min-width: 1140px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__wrapper {
     &-info {
-      margin-bottom: 1.5rem;
+      margin-bottom: clamp(1.5rem, 2vw, 2rem);
       display: flex;
       align-items: center;
       gap: 1.5rem;
