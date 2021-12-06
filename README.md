@@ -1,4 +1,4 @@
-# Frontend Mentor - Testimonials Grid Section solution
+# Frontend Mentor - Testimonials Grid Section Solution
 
 This is a solution to the [Testimonials Grid Section Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7).
 
