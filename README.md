@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [https://kens-visuals.github.io/testimonials-grid-section/](https://kens-visuals.github.io/testimonials-grid-section/)
-- Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Solution URL: [https://www.frontendmentor.io/solutions/testimonials-grid-section-with-scss-bem-and-css-grid-dr2f83Qua](https://www.frontendmentor.io/solutions/testimonials-grid-section-with-scss-bem-and-css-grid-dr2f83Qua)
 
 ## My process
 
